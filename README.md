@@ -1,66 +1,38 @@
-#Cricket-Data-Analysis System#
-
+Cricket Visual Analytics System
 This Python script provides a visual analytics system for analyzing the career statistics of Indian cricketers in Test, ODI, and T20 formats. The application fetches data from ESPNcricinfo, stores it in a MySQL database, and generates a variety of plots to visualize the performance of both batsmen and bowlers.
 
 Features
-Data Fetching: Fetches the latest career statistics for Indian cricketers from ESPNcricinfo.
+  -> Data Fetching: Fetches the latest career statistics for Indian cricketers from ESPNcricinfo.
+  -> Database Storage: Caches the fetched data in a local MySQL database to avoid redundant downloads.
+  -> Multiple Formats: Supports analysis for Test, One-Day International (ODI), and Twenty20 (T20) matches.
+  -> Role-Based Analysis: Provides separate statistical visualizations for batsmen and bowlers.
+  -> Interactive Menu: A command-line interface allows the user to select the match format and player role they wish       to analyze.
+  -> Data Visualization: Generates a comprehensive set of plots for in-depth analysis, including:
 
-Database Storage: Caches the fetched data in a local MySQL database to avoid redundant downloads.
+** For Batsmen : **
 
-Multiple Formats: Supports analysis for Test, One-Day International (ODI), and Twenty20 (T20) matches.
+  -> Runs vs. Strike Rate
+  -> Runs vs. Batting Average
+  -> Comparison of Hundreds vs. Fifties
+  -> Percentage of Runs from Boundaries
+  -> Boxplot of Runs vs. Matches Played
+  -> Correlation Heatmap of Batting Stats
+  -> Trend of Ducks Across Players
 
-Role-Based Analysis: Provides separate statistical visualizations for batsmen and bowlers.
+** For Bowlers: **
 
-Interactive Menu: A command-line interface allows the user to select the match format and player role they wish to analyze.
-
-Data Visualization: Generates a comprehensive set of plots for in-depth analysis, including:
-
-For Batsmen:
-
-Runs vs. Strike Rate
-
-Runs vs. Batting Average
-
-Comparison of Hundreds vs. Fifties
-
-Percentage of Runs from Boundaries
-
-Boxplot of Runs vs. Matches Played
-
-Correlation Heatmap of Batting Stats
-
-Trend of Ducks Across Players
-
-For Bowlers:
-
-Best Bowling Figures
-
-Comparison of 4-Wicket and 5-Wicket Hauls
-
-Economy Rate vs. Strike Rate
-
-Wickets vs. Bowling Average
-
-Boxplot of Wickets vs. Matches Played
-
-Bar Graph of Innings vs. Wickets
-
-Correlation Heatmap of Bowling Stats
+  -> Best Bowling Figures
+  -> Comparison of 4-Wicket and 5-Wicket Hauls
+  -> Economy Rate vs. Strike Rate
+  -> Wickets vs. Bowling Average
+  -> Boxplot of Wickets vs. Matches Played
+  -> Bar Graph of Innings vs. Wickets
+  -> Correlation Heatmap of Bowling Stats
 
 Prerequisites
 Before running the script, you need to have the following installed:
 
-Python 3
-
-pandas
-
-SQLAlchemy
-
-PyMySQL
-
-Matplotlib
-
-Seaborn
+Python 3,pandas,SQLAlchemy,PyMySQL,Matplotlib,Seaborn
 
 A running MySQL server instance.
 
