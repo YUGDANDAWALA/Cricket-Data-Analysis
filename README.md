@@ -1,4 +1,4 @@
-#Cricket Visual Analytics System#
+#Cricket-Data-Analysis System#
 
 This Python script provides a visual analytics system for analyzing the career statistics of Indian cricketers in Test, ODI, and T20 formats. The application fetches data from ESPNcricinfo, stores it in a MySQL database, and generates a variety of plots to visualize the performance of both batsmen and bowlers.
 
